@@ -1,5 +1,5 @@
-import style from "./button.module.scss"
+import style from './button.module.scss';
 
 export default function Button() {
-    return <button className={style.button}>click me!</button>
+  return <button className={style.button} type='button'>click me!</button>;
 }

@@ -60,18 +60,13 @@ this is a template repo for setting up dev environment for nextjs 14
                     "next/core-web-vitals"
                 ],
                 "rules": {
-                    "import/extensions": [ "error", "ignorePackages", { "": "never" } ],
-                    "import/no-unresolved": "off",
-                    "import/no-extraneous-dependencies": "off",
-                    "import/prefer-default-export": "off",
-                    "no-use-before-define": "off",
+                    "jsx-quotes": ["error", "prefer-single"],
                     "max-len": ["error", { "code": 300 }],
-                    "no-unused-expressions": "off"
+                    "import/no-unresolved": "off",
+                    "import/extensions": [ "error", "ignorePackages", { "": "never" } ]
                 }
-            }
-            
+            }            
         ```
-
 
 * create following files from root and set content (see files)
     - src/app/layout.jsx (import global.scss)
