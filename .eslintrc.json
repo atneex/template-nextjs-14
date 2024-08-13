@@ -1,0 +1,23 @@
+{
+    "extends": [
+        "airbnb",
+        "airbnb/hooks",
+        "next/core-web-vitals"
+    ],
+    "rules": {
+        "import/extensions": [ "error", "ignorePackages", { "": "never" } ],
+        "import/no-unresolved": "off",
+        "import/no-extraneous-dependencies": "off",
+        "import/prefer-default-export": "off",
+        "no-use-before-define": "off",
+        "max-len": ["error", { "code": 300 }]
+    },
+    "overrides": [
+        {
+            "files": ["*.test.js", "*.spec.js"],
+            "rules": {
+                "no-unused-expressions": "off"
+            }
+        }
+    ]
+}
