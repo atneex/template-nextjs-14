@@ -1,5 +1,5 @@
 # Template-nextjs-14
-this is a template repo for setting up dev environment for nextjs 14
+this is a template repo for setting up the dev environment for nextjs 14
 
 **Configure nextjs:**
 * install and configure nextjs manuelly
@@ -34,8 +34,8 @@ this is a template repo for setting up dev environment for nextjs 14
             }
         ```
 
-* create following files from root and set content (see files)
-    - src/app/layout.jsx (import global.scss)
+* create following files under root and set content (see files)
+    - src/app/layout.jsx
     - src/app/page.jsx
     - src/components/button/button.jsx
     - public/img/next.svg
@@ -74,7 +74,8 @@ this is a template repo for setting up dev environment for nextjs 14
 **Configure Style:**
 * install scss normalize.css
     ```console
-    npm install --save-dev sass normalize.css
+    npm install --save-dev sass
+    npm install normalize.css
     ```
 
 * create file next.config.js under root
@@ -104,4 +105,4 @@ this is a template repo for setting up dev environment for nextjs 14
 * remove mdx-pattern and onboarding-addon in .storybook/main.js
 * remove stories folder under src
 * create story for button
-    - src/components/button/button.stories.js
+    - src/components/button/button.stories.js (by the import of scss the extension must be written)
