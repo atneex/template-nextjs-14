@@ -2,12 +2,13 @@
     "extends": [
         "airbnb",
         "airbnb/hooks",
-        "next/core-web-vitals"
+        "next/core-web-vitals",
+        "plugin:storybook/recommended"
     ],
     "rules": {
         "jsx-quotes": ["error", "prefer-single"],
         "max-len": ["error", { "code": 300 }],
         "import/no-unresolved": "off",
-        "import/extensions": [ "error", "ignorePackages", { "": "never" } ]
+        "import/extensions": [ "error", "ignorePackages", { "": "never", "js": "never", "jsx": "never"}]
     }
 }

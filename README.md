@@ -1,7 +1,7 @@
 # Template-nextjs-14
 this is a template repo for setting up dev environment for nextjs 14
 
-**Following steps are done:**
+**Following steps are for the configuration of nextjs, eslint, scss:**
 
 * install and configure nextjs manuelly
     ```console
@@ -83,4 +83,12 @@ this is a template repo for setting up dev environment for nextjs 14
         .node_modules
     ```
 
-
+**Following steps are for configuration of Storybooks:**
+* install storybook
+    ```console
+    npx storybook@latest init
+    ```
+* remove mdx-pattern and onboarding-addon in .storybook/main.js
+* remove stories folder under src
+* create story for button
+    - src/components/button/button.stories.js
