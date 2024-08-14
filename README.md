@@ -1,15 +1,10 @@
 # Template-nextjs-14
 this is a template repo for setting up dev environment for nextjs 14
 
-**Following steps are for the configuration of nextjs, eslint, scss:**
-
+**Configure nextjs:**
 * install and configure nextjs manuelly
     ```console
     npm install next@latest react@latest react-dom@
-    ```
-* install other packages
-    ```console
-    npm install --save-dev sass eslint eslint-config-airbnb eslint-config-next
     ```
 
 * define npm commands in package.json
@@ -32,23 +27,31 @@ this is a template repo for setting up dev environment for nextjs 14
                     "baseUrl": "src/",
                     "paths": {
                         "@/styles/*": ["styles/*"],
-                        "@/components/*": ["components/*"]
+                        "@/components/*": ["components/*"],
+                        "@/pages/*": ["pages/*"]
                     }
                 }
             }
         ```
 
-* create file next.config.js under root
-    - enable scss
-        ```js
-            const path = require('path')
-            module.exports = {
-                sassOptions: {
-                    includePaths: [path.join(__dirname, 'styles')],
-                },
-            }
-            
-        ```
+* create following files from root and set content (see files)
+    - src/app/layout.jsx (import global.scss)
+    - src/app/page.jsx
+    - src/components/button/button.jsx
+    - public/img/next.svg
+
+
+* create .gitignore with following patterns
+    ```console
+        .next
+        .node_modules
+    ```
+
+**Configure EsLint:**
+* install Lint
+    ```console
+    npm install --save-dev  eslint eslint-config-airbnb eslint-config-next
+    ```
 
 * create file .eslintrc.json under root
     - set lint configuration
@@ -68,22 +71,32 @@ this is a template repo for setting up dev environment for nextjs 14
             }            
         ```
 
-* create following files from root and set content (see files)
-    - src/app/layout.jsx (import global.scss)
-    - src/app/page.jsx
-    - src/components/button/button.jsx
-    - src/components/button/button.module.scss
-    - src/styles/global.scss (import normalize.css)
-    - public/img/next.svg
-
-
-* create .gitignore with following patterns
+**Configure Style:**
+* install scss normalize.css
     ```console
-        .next
-        .node_modules
+    npm install --save-dev sass normalize.css
     ```
 
-**Following steps are for configuration of Storybooks:**
+* create file next.config.js under root
+    - enable scss
+        ```js
+            const path = require('path')
+            module.exports = {
+                sassOptions: {
+                    includePaths: [path.join(__dirname, 'styles')],
+                },
+            }
+            
+        ```
+    
+* create following files from root and set content (see files)
+    - src/app/layout.jsx (import global.scss)
+    - src/styles/global.scss (import normalize.css)
+    - src/styles/variables.scss
+    - src/styles/mixins.scss
+    - src/components/button/button.module.scss
+
+**Configure Storybooks:**
 * install storybook
     ```console
     npx storybook@latest init
