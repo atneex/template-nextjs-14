@@ -91,11 +91,13 @@ this is a template repo for setting up the dev environment for nextjs 14
         ```
     
 * create following files from root and set content (see files)
-    - src/app/layout.jsx (import global.scss)
     - src/styles/global.scss (import normalize.css)
     - src/styles/variables.scss
     - src/styles/mixins.scss
     - src/components/button/button.module.scss
+
+* import global.scss in src/app/layout.jsx
+* configure breakpoint, max-width
 
 **Configure Storybooks:**
 * install storybook
@@ -106,3 +108,6 @@ this is a template repo for setting up the dev environment for nextjs 14
 * remove stories folder under src
 * create story for button
     - src/components/button/button.stories.js (by the import of scss the extension must be written)
+
+**Configure App Route:**
+* create src/app/about/page.jsx
