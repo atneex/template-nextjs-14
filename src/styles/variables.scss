@@ -1,7 +1,41 @@
-// colors
+// ========== colors
 $primary-color: #007bff;
 
-// fonts
 
 
-// breakpoints
+// ========== typography
+$base-font-size: 16px;
+$base-font-size-table: 14px;
+$base-font-size-phone: 10px;
+
+$font-size-xxxl: 3rem;        // 48px
+$font-size-xxl: 2.5rem;       // 40px
+$font-size-xl: 2rem;          // 32px
+$font-size-lg: 1.75rem;       // 28px
+$font-size-md: 1.5rem;        // 24px
+$font-size-sm: 1.25rem;       // 20px
+$font-size-base: 1rem;        // 16px
+$font-size-xs: 0.875rem;      // 14px
+$font-size-xxs: 0.75rem;      // 12px
+
+
+
+//========== breakpoint
+$breakpoint-xs: 320px;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+
+@mixin md-screen {
+  @media only screen and (max-width: $breakpoint-lg) and (min-width: $breakpoint-sm) {
+      @content;
+  }
+}
+
+@mixin sm-screen {
+  @media only screen and (max-width: $breakpoint-sm) {
+      @content;
+  }
+}
