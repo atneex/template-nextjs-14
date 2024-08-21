@@ -1,9 +1,22 @@
-// ========== colors
+// ========== colors ==========
 $primary-color: #007bff;
+$secondary-color: #6c757d;
+$success-color: #28a745;
+$danger-color: #dc3545;
+$warning-color: #ffc107;
+$info-color: #17a2b8;
+$light-color: #f8f9fa;
+$dark-color: #343a40;
 
+$primary-text-color: #2b2b2b;
+$secondary-text-color: #6c757d;
+$info-text-color: #bfc4c5;
+$light-text-color: #eaeaeb;
 
+$primary-bg-color: #2b2b2b;
+$secondary-bg-color: #6c757d;
 
-// ========== typography
+// ========== typography ==========
 $base-font-size: 16px;
 $base-font-size-table: 14px;
 $base-font-size-phone: 10px;
@@ -20,7 +33,7 @@ $font-size-xxs: 0.75rem;      // 12px
 
 
 
-//========== breakpoint
+//========== breakpoint ==========
 $breakpoint-xs: 320px;
 $breakpoint-sm: 576px;
 $breakpoint-md: 768px;
