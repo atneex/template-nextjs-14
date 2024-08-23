@@ -4,7 +4,7 @@ this is a template repo for setting up the dev environment for nextjs 14
 **Configure nextjs:**
 * install and configure nextjs manuelly
     ```console
-    npm install next@latest react@latest react-dom@
+    npm install react@latest react-dom@latest next@latest
     ```
 
 * define npm commands in package.json
@@ -97,7 +97,7 @@ this is a template repo for setting up the dev environment for nextjs 14
     - src/components/button/button.module.scss
 
 * import global.scss in src/app/layout.jsx
-* configure breakpoint, max-width
+* configure colors, typography, breakpoint, max-width
 
 **Configure Storybooks:**
 * install storybook
