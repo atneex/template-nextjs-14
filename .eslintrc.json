@@ -9,6 +9,8 @@
         "jsx-quotes": ["error", "prefer-single"],
         "max-len": ["error", { "code": 300 }],
         "import/no-unresolved": "off",
-        "import/extensions": [ "error", "ignorePackages", { "": "never", "js": "never", "jsx": "never"}]
+        "import/extensions": [ "error", "ignorePackages", { "": "never", "js": "never", "jsx": "never"}],
+        "react/jsx-filename-extension": ["error", { "extensions": [".js", ".jsx"] }]
+
     }
 }

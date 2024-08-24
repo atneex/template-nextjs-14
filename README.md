@@ -35,9 +35,9 @@ this is a template repo for setting up the dev environment for nextjs 14
         ```
 
 * create following files under root and set content (see files)
-    - src/app/layout.jsx
-    - src/app/page.jsx
-    - src/components/button/button.jsx
+    - src/app/layout.js
+    - src/app/page.js
+    - src/components/button/button.js
     - public/img/next.svg
 
 
@@ -66,7 +66,9 @@ this is a template repo for setting up the dev environment for nextjs 14
                     "jsx-quotes": ["error", "prefer-single"],
                     "max-len": ["error", { "code": 300 }],
                     "import/no-unresolved": "off",
-                    "import/extensions": [ "error", "ignorePackages", { "": "never" } ]
+                    "import/extensions": ["error", "ignorePackages", {"": "never"}],
+                    "react/jsx-filename-extension": ["error", {"extensions": [".js", ".jsx"]}]
+
                 }
             }            
         ```
@@ -96,7 +98,7 @@ this is a template repo for setting up the dev environment for nextjs 14
     - src/styles/mixins.scss
     - src/components/button/button.module.scss
 
-* import global.scss in src/app/layout.jsx
+* import global.scss in src/app/layout.js
 * configure colors, typography, breakpoint, max-width
 
 **Configure Storybooks:**
@@ -110,4 +112,16 @@ this is a template repo for setting up the dev environment for nextjs 14
     - src/components/button/button.stories.js (by the import of scss the extension must be written)
 
 **Configure App Route:**
-* create src/app/about/page.jsx
+* create src/app/about/page.js
+
+**Configure Project Line Ending**
+* git
+    ```console
+        git config --global core.autocrlf false    
+    ```
+* vscode
+    ```json
+        {
+            "files.eol": "\n"
+        }        
+    ```
