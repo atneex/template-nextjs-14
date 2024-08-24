@@ -1,0 +1,15 @@
+@import "@/styles/variables.scss";
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  border: 1px blue solid;
+  display: flex;
+
+  main {
+    max-width: $breakpoint-xxl;
+    flex: 1;
+    margin: 5%;
+    border: 1px red solid;
+  }
+}
